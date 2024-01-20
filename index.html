@@ -76,7 +76,8 @@ body {
 	transform: translate3d(0, calc(var(--scrollTop) / 5.7), 0);
 }
 .layer__header {
-	z-index: 1;
+	height: 250px;
+	z-index: 2;
 	transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
 	transition: var(--transition);
 	will-change: transform;
@@ -145,26 +146,25 @@ body {
 			<header class="main-header">
 				<div class="layers">
 					<div class="layer__header">
-						<div class="layers__caption">p.s. Украденный сайт про горы</div>
-						<div class="layers__title">Cайт про горы</div>
+						<div class="layers__caption">какой то текст</div>
+						<div class="layers__title">Cайт для понтов</div>
 					</div>
-					<div class="layer layers__base" style="background-image: url(layer-base.png);"></div>
-					<div class="layer layers__middle" style="background-image: url(layer-middle.png);"></div>
-					<div class="layer layers__front" style="background-image: url(layer-front.png);"></div>
+					<div class="layer layers__base" style="background-image: url(1111.jpg);"></div>
+					<div class="layer layers__middle" style="background-image: url(2222.png);"></div>
+					<div class="layer layers__front" style="background-image: url(3333.png);"></div>
 				</div>
 			</header>
 		
 			<article class="main-article" style="background-image: url(dungeon.jpg);">
 				<div class="main-article__content">
-					<h2 class="main-article__header">Тест Ахахахахахаха</h2>
-					<p class="main-article__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis error provident dignissimos facere. Repellendus tempore autem qui! Quia magnam tempora esse id necessitatibus corrupti mollitia expedita sapiente cum rerum, ut dicta laboriosam!</p>
+					<p class="main-article__paragraph">Скоро здесь будет полноценный адаптивный сайт, который будет одинаково хорошо смотреться и на телефонах и на компьютерах. А пока здесь только обложка.</p>
 				</div>
-				<div class="copy">© WebDesign Master</div>
+				<div class="copy">©2024 Астемир Х</div>
 			</article>
 
 		</div>
 	</div>
-
+	
 </body>
 <script>window.addEventListener('scroll', e => {
       document.documentElement.style.setProperty('--scrollTop', `${this.scrollY}px`) // Update method
