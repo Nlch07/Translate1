@@ -29,7 +29,8 @@
 body {
 	background-color: #010101;
 	font-family: raleway_f, sans-serif;
-	line-height: 1.55;
+	height: 3000px;
+	transition: all 1s ease;
 }
 .main-header {
 	position: relative;
@@ -70,10 +71,10 @@ body {
 	z-index: 0;
 }
 .layers__middle {
-	transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
+	transform: translate3d(0, calc(var(--scrollTop) / 3.5), 0);
 }
 .layers__front {
-	transform: translate3d(0, calc(var(--scrollTop) / 5.7), 0);
+	transform: translate3d(0, calc(var(--scrollTop) / 6.7), 0);
 }
 .layer__header {
 	height: 250px;
@@ -136,6 +137,12 @@ body {
 	font-size: calc(var(--index) * .75);
 	letter-spacing: calc(var(--index) / 37.5);
 }
+.ll{
+	height: 200px;
+}
+.ww{
+	height: 800px;
+}
 
 </style>
 <body>
@@ -146,7 +153,7 @@ body {
 			<header class="main-header">
 				<div class="layers">
 					<div class="layer__header">
-						<div class="layers__caption">На фоне Эльбрус</div>
+						<div class="layers__caption">какой то текст</div>
 						<div class="layers__title">Cайт для понтов</div>
 					</div>
 					<div class="layer layers__base" style="background-image: url(1111.jpg);"></div>
@@ -161,18 +168,31 @@ body {
 				</div>
 				<div class="copy">©2024 Астемир Х</div>
 			</article>
-
 		</div>
+	</div>
+	<div class="ll">
+		"nj vju ,snm j,sxysq cfqn"
+	</div>
+	<div class="ww">
+	</div>
+	<div class="qq">
+		yj yt ,eltn
 	</div>
 	
 </body>
-<script>window.addEventListener('scroll', e => {
-      document.documentElement.style.setProperty('--scrollTop', `${this.scrollY}px`) // Update method
-      })
-      gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
-      ScrollSmoother.create({
-      wrapper: '.wrapper',
-      content: '.content'
+<script>
+	window.addEventListener('scroll', e => {
+    document.documentElement.style.setProperty('--scrollTop', `${this.scrollY}px`) // Update method
     })
+	window.addEventListener('scroll', () => {
+      const verticalScrollPx = window.scrollY || window.pageYOffset;
+      if (verticalScrollPx < 500) {
+        document.body.style.backgroundColor = 'white';
+      } else if (verticalScrollPx > 1800 && verticalScrollPx < 2200) {
+        document.body.style.backgroundColor = 'greenyellow';
+      } else {
+        document.body.style.backgroundColor = 'white';
+      }
+    });
 </script>
 </html>
