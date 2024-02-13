@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  .badi{
+    display: flex;
+    flex-direction: column;
+    background-color: #353535;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bidi{
+    margin: 5px;
+    text-align: center;
+    background-color:rgba(255, 255, 255, 0.904);
+    height: 40%;
+    width: 80%;
+    border-radius: 30px;
+    border: 3px solid rgb(32, 32, 32);
+  }
+  p{
+    margin: 150px 30px 0px 30px;
+    font-size: 3vh;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(27, 27, 27);
+  }
+  button{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%; /* Радиус скругления */
+    border: 2px solid rgb(31, 31, 31);
+    margin: 10px;
+   }
+   button:hover{
+    border-radius: 50%; /* Радиус скругления */
+    transform: scale(1.1);
+   }
+
+   button.k{
+    background-color: #353535;
+   }
+   button.s{
+    background-color: #3c6e71;
+   }
+   button.z{
+    background-color: #d8d8d8;
+   }
+   button.f{
+    background-color: #284b63;
+   }
+
+   .BBB{
+    text-align: center;
+    background-color:rgba(255, 255, 255, 0.904);
+    height: 7%;
+    width: 80%;
+    border-radius: 30px;
+    border: 3px solid rgb(32, 32, 32);
+   }
+   @media screen and (max-width: 900px) {
+  .BBB {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  button{
+    padding: 10px;
+    border-radius: 50%;
+  }
+  p {
+    font-size: 3vh;
+    text-align: center;
+  }
+   }
+</style>
+</head>
+<div class="badi">
+    <div class="BBB">
+      <button class="k"></button>
+      <button class="s"></button>
+      <button class="z"></button>
+      <button class="f"></button>
+    </div>
+  <div class="bidi">
+    <p id="myText">Здесь находится мой текст, а так, как я не придумал че здесь
+       написать, тут ничего не будет. </p>
+       
+  </div>
+</div>
+  <script>
+    document.querySelector(".k").addEventListener("click", function() {
+    document.querySelector(".badi").style.backgroundColor = "#353535";
+    document.querySelector("p").style.fontFamily = "'Arial', sans-serif";
+    document.getElementById("myText").innerHTML = 
+    "Здесь находится мой текст, а так, как я не придумал че здесь написать, тут ничего не будет.";}); 
+    document.querySelector(".s").addEventListener("click", function() {
+    document.querySelector(".badi").style.backgroundColor = "#3c6e71";
+    document.querySelector("p").style.fontFamily = "'Verdana', sans-serif"; 
+    document.getElementById("myText").innerHTML = 
+    "Здесь находится мой текст, а так, как я не придумал че здесь написать, тут ничего не будет.";}); document.querySelector(".z").addEventListener("click", function() {
+    document.querySelector(".badi").style.backgroundColor = "#d8d8d8"; 
+    document.querySelector("p").style.fontFamily = "'Times New Roman', serif"; 
+    document.getElementById("myText").innerHTML = 
+    "Здесь находится мой текст, а так, как я не придумал че здесь написать, тут ничего не будет.";});  document.querySelector(".f").addEventListener("click", function() {
+    document.querySelector(".badi").style.backgroundColor = "#284b63";
+    document.querySelector("p").style.fontFamily = "'Courier New', Courier, monospace"; 
+    document.getElementById("myText").innerHTML = 
+    "Мыдэ си текстыр щыащ, ауэрэ сэ сщ1эым сыт сгъатхэнщ, абымч1э зыри щыак1ым.";});
+  </script>
+</body>
+</html>
