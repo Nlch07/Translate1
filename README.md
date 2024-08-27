@@ -1,1 +1,1 @@
-https://nlch07.github.io/Translate1/-готовый сайт
+https://nlch07.github.io/Translate1 -готовый сайт
